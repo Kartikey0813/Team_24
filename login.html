@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      height: 100vh;
+
+      background: rgba(85, 149, 236, 1);
+      background: -webkit-linear-gradient(
+        top left,
+        rgba(85, 149, 236, 1),
+        rgba(153, 75, 218, 1)
+      );
+      background: -moz-linear-gradient(
+        top left,
+        rgba(85, 149, 236, 1),
+        rgba(153, 75, 218, 1)
+      );
+      background: linear-gradient(
+        to bottom right,
+        rgba(85, 149, 236, 1),
+        rgba(153, 75, 218, 1)
+      );
+    }
+    .login {
+      width: 30%;
+
+      margin: auto;
+      margin-top: 5%;
+      /* border: 1px solid red; */
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .login h1 {
+      text-align: center;
+      margin-top: 90px;
+    }
+    .login .details {
+      width: 80%;
+      margin: auto;
+      margin-top: 50px;
+      /* border: 1px solid red; */
+    }
+    .login .details input,
+    .login .details button {
+      width: 100%;
+      margin: auto;
+      margin-top: 20px;
+      padding: 25px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      font-size: 20px;
+      border: none;
+      border-bottom: 2px solid gray;
+      outline: none;
+    }
+    .login .details button {
+      padding: 15px;
+      margin-top: 35px;
+      border: none;
+      color: white;
+
+      background: rgba(85, 149, 236, 1);
+      background: -webkit-linear-gradient(
+        top left,
+        rgba(85, 149, 236, 1),
+        rgba(153, 75, 218, 1)
+      );
+      background: -moz-linear-gradient(
+        top left,
+        rgba(85, 149, 236, 1),
+        rgba(153, 75, 218, 1)
+      );
+      background: linear-gradient(
+        to bottom right,
+        rgba(85, 149, 236, 1),
+        rgba(153, 75, 218, 1)
+      );
+    }
+    .login .details button:hover {
+      cursor: pointer;
+    }
+    .login p {
+      margin-top: 70px;
+      color: gray;
+    }
+    .login p a {
+      text-decoration: none;
+    }
+    .login p + p {
+      margin-top: 20px;
+      margin-bottom: 90px;
+    }
+  </style>
+  <body>
+    <div class="login">
+      <h1>Login</h1>
+      <div class="details">
+        <input type="email" name="" id="email" placeholder="Email" />
+        <br />
+        <input type="password" name="" id="pass" placeholder="Password" />
+        <br />
+        <button>Login</button>
+      </div>
+      <p>Forgot <a href="#">Password</a>?</p>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </body>
+</html>
